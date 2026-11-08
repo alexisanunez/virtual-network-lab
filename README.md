@@ -11,7 +11,7 @@ El servidor utiliza dos interfaces de red:
 - **External:** conexión NAT para acceder a Internet y permitir la conexión de los clientes mediante RRAS.
 - **Internal:** interfaz con IP estática para la comunicación con los clientes.
 
-<table>
+<table width="100%" align="center">
   <tr>
     <td align="center">
       <img src="https://i.imgur.com/YfL6qjE.png" width="85%">
@@ -19,24 +19,18 @@ El servidor utiliza dos interfaces de red:
       <em>Ambas NICs del servidor vistas en la GUI.</em>
     </td>
   </tr>
-</table>
-
-<table>
   <tr>
     <td align="center">
       <img src="https://i.imgur.com/jVbt82g.png" width="85%">
       <br>
-      <em>Configuración de las NIC externa.</em>
+      <em>Configuración de la NIC externa.</em>
     </td>
   </tr>
-</table>
-
-<table>
   <tr>
     <td align="center">
       <img src="https://i.imgur.com/x50ieja.png" width="85%">
       <br>
-      <em>Configuración de las NIC interna.</em>
+      <em>Configuración de la NIC interna.</em>
     </td>
   </tr>
 </table>
