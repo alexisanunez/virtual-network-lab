@@ -104,7 +104,7 @@ El servidor utiliza dos interfaces de red:
   </tr>
 </table>
 
-- Verificaciones:
+- Verificaciones
 
 <table width="100%" align="center">
   <tr>
@@ -142,6 +142,8 @@ El servidor utiliza dos interfaces de red:
   </tr>
 </table>
 
-## Habilidades Técnicas
+## Conclusiones y problemas encontrados en el lab
 
-VirtualBox · Windows Server · Active Directory · TCP/IP · DNS · DHCP · NAT · Network Troubleshooting
+La verdad que fue una progresión bastante sencilla y no hubo ningún problema, tengo bastante experiencia en instalación de sistemas operativos y configuración de redes así que no esperaba complicaciones mayores en esta sección. Talvez podría haber añadido un PTR record para completar la configuración de DNS pero no lo veía tan necesario para este lab. Saludos!
+
+
