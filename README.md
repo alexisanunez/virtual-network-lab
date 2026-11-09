@@ -47,58 +47,39 @@ El servidor utiliza dos interfaces de red:
 
 - Instalación del rol **Active Directory Domain Services (AD DS)** en Windows Server 2025.
 - Promoción del servidor a **Domain Controller** y creación del dominio `mydomain.com`.
-- Configuración de **DNS** para la resolución de nombres dentro del dominio.
-- Instalación y configuración de **DHCP**, incluyendo la creación del ámbito y la asignación automática de direcciones IP.
 
 <table width="100%" align="center">
   <tr>
-    <td colspan="2" align="center">
+    <td align="center">
       <img src="https://i.imgur.com/KVTHLg7.png" width="100%">
       <br>
       <em>Servidor promovido a DC y dominio creado.</em>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://i.imgur.com/QXH8Nep.png" width="100%">
-      <br>
-      <em>Zona DNS del dominio.</em>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://i.imgur.com/bznJgXv.png" width="100%">
-      <br>
-      <em>Creación del DHCP Scope.</em>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://i.imgur.com/bznJgXv.png" width="100%">
-      <br>
-      <em>Configuración de DHCP Options.</em>
     </td>
   </tr>
 </table>
 
+- Configuración de **DNS** para la resolución de nombres dentro del dominio.
+
 <table width="100%" align="center">
   <tr>
-    <td align="center" width="25%">
-      <img src="https://i.imgur.com/KVTHLg7.png" width="100%">
-      <br>
-      <em>Servidor promovido a DC y dominio creado.</em>
-    </td>
-    <td align="center" width="25%">
+    <td align="center">
       <img src="https://i.imgur.com/QXH8Nep.png" width="100%">
       <br>
       <em>Zona DNS del dominio.</em>
     </td>
-    <td align="center" width="25%">
-      <img src="https://i.imgur.com/bznJgXv.png" width="100%">
+  </tr>
+</table>
+
+- Instalación y configuración de **DHCP**, incluyendo la creación del ámbito y la asignación automática de direcciones IP.
+
+<table width="100%" align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://i.imgur.com/IpVttYK.png" width="100%">
       <br>
       <em>Creación del DHCP Scope.</em>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <img src="https://i.imgur.com/bznJgXv.png" width="100%">
       <br>
       <em>Configuración de DHCP Options.</em>
@@ -107,6 +88,16 @@ El servidor utiliza dos interfaces de red:
 </table>
 
 - Unión de los dos clientes Windows 11 LTSC al dominio.
+
+<table width="100%" align="center">
+  <tr>
+    <td align="center">
+      <img src="https://i.imgur.com/aX37irq.png" width="100%">
+      <br>
+      <em>Configuración de nombre y dominio del cliente.</em>
+    </td>
+  </tr>
+</table>
 
 
 ## Habilidades Técnicas
