@@ -4,51 +4,82 @@ Implementación de un entorno virtualizado con Oracle VirtualBox 7.2, utilizando
 
 ![](https://i.imgur.com/QAACm60.png)
 
+## Entorno
+
+- **Hypervisor:** Oracle VirtualBox 7.2
+- **Server:** Windows Server 2025
+- **Clients:** Windows 11 LTSC
+- **Domain:** `mydomain.com`
+- **Network Services:** AD DS, DHCP, RRAS/NAT, DNS
+
 ## Topología de Red
 
 El servidor utiliza dos interfaces de red:
 
-- **External:** conexión NAT para acceder a Internet y permitir la conexión de los clientes mediante RRAS.
-- **Internal:** interfaz con IP estática para la comunicación con los clientes.
+- **INTERNET-NIC:** conexión NAT para acceder a Internet y permitir la conexión de los clientes mediante RRAS.
+- **VNETWORK-NIC:** interfaz con IP estática para la comunicación con los clientes.
 
 <table width="100%" align="center">
   <tr>
-    <td align="center">
-      <img src="https://i.imgur.com/YfL6qjE.png" width="85%">
+    <td colspan="2" align="center">
+      <img src="https://i.imgur.com/IavbFIA.png" width="85%">
       <br>
-      <em>Ambas NICs del servidor vistas en la GUI.</em>
+      <em>NICs del servidor y configuración IP de la NIC interna.</em>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="https://i.imgur.com/jVbt82g.png" width="85%">
+    <td colspan="2" align="center">
+      <img src="https://i.imgur.com/gixQexu.png" width="85%">
       <br>
-      <em>Configuración de la NIC externa.</em>
+      <em>Activación de NAT en la NIC Externa.</em>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="https://i.imgur.com/x50ieja.png" width="85%">
+    <td colspan="2" align="center">
+      <img src="https://i.imgur.com/ZOCxQiA.png" width="85%">
       <br>
-      <em>Configuración de la NIC interna.</em>
+      <em>Verificación de las configuraciones de las NICs del server.</em>
     </td>
   </tr>
 </table>
 
-## Implementación
+## Implementación de Servicios
 
-- Creación y configuración de máquinas virtuales.
-- Configuración de redes NAT e Internal Network.
-- Instalación de Active Directory Domain Services (AD DS).
-- Creación del dominio y unión de los clientes.
-- Configuración de DNS, DHCP y NAT.
+- Instalación del rol **Active Directory Domain Services (AD DS)** en Windows Server 2025.
+- Promoción del servidor a **Domain Controller** y creación del dominio `mydomain.com`.
+- Configuración de **DNS** para la resolución de nombres dentro del dominio.
+- Instalación y configuración de **DHCP**, incluyendo la creación del ámbito y la asignación automática de direcciones IP.
 
-## Validación
+<table width="100%">
+  <tr>
+    <td align="center" width="42%">
+      <img src="https://i.imgur.com/KVTHLg7.png" width="100%">
+      <br>
+      <em>Servidor promovido a DC y dominio creado.</em>
+    </td>
+    <td align="center" width="42%">
+      <img src="https://i.imgur.com/QXH8Nep.png" width="100%">
+      <br>
+      <em>Zona DNS del dominio.</em>
+    </td>
+  </tr>
+</table>
 
-- Verificación de la asignación automática de direcciones IP mediante DHCP.
-- Pruebas de resolución DNS.
-- Comprobación de conectividad entre equipos.
-- Verificación del acceso a Internet desde los clientes.
+<table width="100%">
+    <td align="center" width="42%">
+      <img src="https://i.imgur.com/IpVttYK.png" width="100%">
+      <br>
+      <em>Creación del DHCP Scope.</em>
+    </td>
+    <td align="center" width="42%">
+      <img src="https://i.imgur.com/bznJgXv.png" width="100%">
+      <br>
+      <em>Configuración de DHCP Options.</em>
+    </td>
+</table>
+
+- Unión de los dos clientes Windows 11 LTSC al dominio.
+
 
 ## Habilidades Técnicas
 
