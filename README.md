@@ -1,6 +1,6 @@
 # Lab de Virtualización y Redes
 
-Implementación de un entorno virtualizado con Oracle VirtualBox 7.2, utilizando Windows Server 2025 como Domain Controller y servidor de red, junto con dos clientes Windows 11 LTSC unidos al dominio.
+Implementación de un entorno virtualizado con Oracle VirtualBox 7.2, utilizando Windows Server 2025 como Domain Controller y servidor de infraestructura de red, junto con dos clientes Windows 11 LTSC unidos al dominio.
 
 ![](https://i.imgur.com/QAACm60.png)
 
@@ -21,21 +21,26 @@ El servidor utiliza dos interfaces de red:
 
 <table width="100%" align="center">
   <tr>
-    <td colspan="2" align="center">
+    <td align="center">
       <img src="https://i.imgur.com/IavbFIA.png" width="100%">
       <br>
-      <em>NICs del servidor y configuración IP de la NIC interna.</em>
+      <em>NICs del servidor y configuración IP de la NIC interna (VNETWORK-NIC).</em>
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center">
+    <td align="center">
       <img src="https://i.imgur.com/gixQexu.png" width="100%">
       <br>
-      <em>Activación de NAT en la NIC Externa.</em>
+      <em>Configuración de NAT mediante RRAS para proporcionar acceso a Internet a los clientes (INTERNET-NIC).</em>
     </td>
   </tr>
+</table>
+
+- **Verificaciones:** ipconfig /all en el server para revisar las configuraciones de las NICs.
+
+<table width="100%" align="center">
   <tr>
-    <td colspan="2" align="center">
+    <td align="center">
       <img src="https://i.imgur.com/ZOCxQiA.png" width="100%">
       <br>
       <em>Verificación de las configuraciones de las NICs del server.</em>
@@ -99,6 +104,43 @@ El servidor utiliza dos interfaces de red:
   </tr>
 </table>
 
+- Verificaciones:
+
+<table width="100%" align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://i.imgur.com/rGxAtE3.png" width="100%">
+      <br>
+      <em>Adición de CLIENT1 al dominio y configuración IP automática (DHCP) exitosa.</em>
+    </td>
+</table>
+
+<table width="100%" align="center">
+    <td align="center" width="50%">
+      <img src="https://i.imgur.com/mSBFj8T.png" width="100%">
+      <br>
+      <em>Conectividad y resolución DNS del DC desde CLIENT1.</em>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center">
+    <td align="center" width="50%">
+      <img src="https://i.imgur.com/VC8eIZb.png" width="100%">
+      <br>
+      <em>Conectividad y resolución DNS de CLIENT2 desde CLIENT1.</em>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center">
+    <td align="center" width="50%">
+      <img src="https://i.imgur.com/WmHIfvT.png" width="100%">
+      <br>
+      <em>Conectividad IP y resolución DNS externa - Conexión a Internet.</em>
+    </td>
+  </tr>
+</table>
 
 ## Habilidades Técnicas
 
