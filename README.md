@@ -113,7 +113,7 @@ El servidor utiliza dos interfaces de red:
       <br>
       <em>Adición de CLIENT1 al dominio y configuración IP automática (DHCP) exitosa.</em>
     </td>
-  <tr>
+  </tr>
 </table>
 
 <table width="100%" align="center">
@@ -137,6 +137,7 @@ El servidor utiliza dos interfaces de red:
 </table>
 
 <table width="100%" align="center">
+  <tr>
     <td align="center" width="50%">
       <img src="https://i.imgur.com/WmHIfvT.png" width="100%">
       <br>
