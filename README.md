@@ -81,6 +81,31 @@ El servidor utiliza dos interfaces de red:
   </tr>
 </table>
 
+<table width="100%" align="center">
+  <tr>
+    <td align="center" width="25%">
+      <img src="https://i.imgur.com/KVTHLg7.png" width="100%">
+      <br>
+      <em>Servidor promovido a DC y dominio creado.</em>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://i.imgur.com/QXH8Nep.png" width="100%">
+      <br>
+      <em>Zona DNS del dominio.</em>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://i.imgur.com/bznJgXv.png" width="100%">
+      <br>
+      <em>Creación del DHCP Scope.</em>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://i.imgur.com/bznJgXv.png" width="100%">
+      <br>
+      <em>Configuración de DHCP Options.</em>
+    </td>
+  </tr>
+</table>
+
 - Unión de los dos clientes Windows 11 LTSC al dominio.
 
 
