@@ -113,9 +113,11 @@ El servidor utiliza dos interfaces de red:
       <br>
       <em>Adición de CLIENT1 al dominio y configuración IP automática (DHCP) exitosa.</em>
     </td>
+  <tr>
 </table>
 
 <table width="100%" align="center">
+  <tr>
     <td align="center" width="50%">
       <img src="https://i.imgur.com/mSBFj8T.png" width="100%">
       <br>
@@ -125,6 +127,7 @@ El servidor utiliza dos interfaces de red:
 </table>
 
 <table width="100%" align="center">
+  <tr>
     <td align="center" width="50%">
       <img src="https://i.imgur.com/VC8eIZb.png" width="100%">
       <br>
@@ -144,6 +147,6 @@ El servidor utiliza dos interfaces de red:
 
 ## Conclusiones y problemas encontrados en el lab
 
-La verdad que fue una progresión bastante sencilla y no hubo ningún problema. Tengo bastante experiencia en instalación de sistemas operativos y configuración de redes así que no esperaba complicaciones mayores en esta sección. Talvez podría haber añadido un PTR record para completar la configuración de DNS pero no lo veía tan necesario para este lab. Saludos!
+La verdad que fue una progresión bastante sencilla y no surgió ningún problema. Tengo bastante experiencia en instalación de sistemas operativos y configuración de redes así que no esperaba complicaciones mayores en esta sección. Tal vez podría haber añadido un PTR record para completar la configuración de DNS pero no lo veía tan necesario para este lab. Saludos!
 
 
