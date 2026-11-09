@@ -22,21 +22,21 @@ El servidor utiliza dos interfaces de red:
 <table width="100%" align="center">
   <tr>
     <td colspan="2" align="center">
-      <img src="https://i.imgur.com/IavbFIA.png" width="85%">
+      <img src="https://i.imgur.com/IavbFIA.png" width="100%">
       <br>
       <em>NICs del servidor y configuración IP de la NIC interna.</em>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="https://i.imgur.com/gixQexu.png" width="85%">
+      <img src="https://i.imgur.com/gixQexu.png" width="100%">
       <br>
       <em>Activación de NAT en la NIC Externa.</em>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="https://i.imgur.com/ZOCxQiA.png" width="85%">
+      <img src="https://i.imgur.com/ZOCxQiA.png" width="100%">
       <br>
       <em>Verificación de las configuraciones de las NICs del server.</em>
     </td>
@@ -50,32 +50,35 @@ El servidor utiliza dos interfaces de red:
 - Configuración de **DNS** para la resolución de nombres dentro del dominio.
 - Instalación y configuración de **DHCP**, incluyendo la creación del ámbito y la asignación automática de direcciones IP.
 
-<table width="100%">
+<table width="100%" align="center">
   <tr>
-    <td align="center" width="42%">
+    <td colspan="2" align="center">
       <img src="https://i.imgur.com/KVTHLg7.png" width="100%">
       <br>
       <em>Servidor promovido a DC y dominio creado.</em>
     </td>
-    <td align="center" width="42%">
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
       <img src="https://i.imgur.com/QXH8Nep.png" width="100%">
       <br>
       <em>Zona DNS del dominio.</em>
     </td>
   </tr>
-</table>
-
-<table width="100%">
-    <td align="center" width="42%">
-      <img src="https://i.imgur.com/IpVttYK.png" width="100%">
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://i.imgur.com/bznJgXv.png" width="100%">
       <br>
       <em>Creación del DHCP Scope.</em>
     </td>
-    <td align="center" width="42%">
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
       <img src="https://i.imgur.com/bznJgXv.png" width="100%">
       <br>
       <em>Configuración de DHCP Options.</em>
     </td>
+  </tr>
 </table>
 
 - Unión de los dos clientes Windows 11 LTSC al dominio.
