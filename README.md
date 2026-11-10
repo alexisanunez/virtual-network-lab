@@ -12,6 +12,16 @@ Implementación de un entorno virtualizado con Oracle VirtualBox 7.2, utilizando
 - **Domain:** `mydomain.com`
 - **Network Services:** AD DS, DHCP, RRAS/NAT, DNS
 
+<table width="100%" align="center">
+  <tr>
+    <td align="center">
+      <img src="https://i.imgur.com/H1zv4bN.png" width="100%">
+      <br>
+      <em>Vista general de los roles instalados.</em>
+    </td>
+  </tr>
+</table>
+
 ## Topología de Red
 
 El servidor utiliza dos interfaces de red:
