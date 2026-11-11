@@ -97,7 +97,7 @@ El servidor utiliza dos interfaces de red:
     <td align="center" width="50%">
       <img src="https://i.imgur.com/bznJgXv.png" width="100%">
       <br>
-      <em>Configuración de DHCP Options.</em>
+      <em>Configuración de las Scope Options.</em>
     </td>
   </tr>
 </table>
@@ -158,6 +158,8 @@ El servidor utiliza dos interfaces de red:
 
 ## Conclusiones y problemas encontrados en el lab
 
-La verdad que fue una progresión bastante sencilla y no surgió ningún problema. Tengo bastante experiencia en instalación de sistemas operativos y configuración de redes así que no esperaba complicaciones mayores en esta sección. Tal vez podría haber añadido un PTR record para completar la configuración de DNS pero no lo veía tan necesario para este lab. Saludos!
+La verdad que fue una progresión bastante sencilla y no surgió ningún problema. Tengo bastante experiencia en instalación de sistemas operativos y configuración de redes así que no esperaba complicaciones mayores en esta sección. Tal vez podría haber añadido un PTR record para completar la configuración de DNS pero no lo veía tan necesario para este lab.
+
+En el próximo lab ([Active Directory Administration Lab](https://github.com/alexisanunez/active-directory-adm-lab)) trabajaré en este mismo entorno. Saludos!
 
 
